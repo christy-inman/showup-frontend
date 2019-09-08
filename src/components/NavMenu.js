@@ -5,7 +5,7 @@ export default function NavMenu() {
     return(
         <Router>
             <nav>
-                <Link className='link' to='/new/'>Host a Protest</Link>
+                <Link className='link' to='/new/' >Host a Protest</Link>
                 <Link className='link' to='/protests/'>Upcoming Protests</Link>
                 <Link className='link' to='/about/'>Our Mission</Link>
                 <Link className='link' to='/contact/'>Contact Us</Link>
