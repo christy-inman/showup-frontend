@@ -1,0 +1,19 @@
+.protest-card {
+    max-width: 400px;
+    text-align: center;
+}
+#footer {
+    border-top: 2px solid black;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: white;
+}
+#header {
+    border-bottom: 2px solid black;
+}
+
+.link {
+  text-decoration: none;
+  margin-left: 10vw;
+}
