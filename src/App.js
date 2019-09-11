@@ -9,7 +9,7 @@ import Home from './components/Home';
 import NewProtest from './components/NewProtest';
 import './App.css';
 
-const protestsURL = 'http://localhost:3000/'
+const protestsURL = 'http://localhost:3000'
 
 
 export default class App extends Component {
@@ -42,6 +42,20 @@ export default class App extends Component {
           .catch(error => console.log(error))
   }
 
+  addNewUser = () => {
+    fetch((protestsURL + '/signup'), {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        name: 'Smaple User',
+        email: 'sample@email.com',
+        password: 'samplepassword',
+        token: ''
+      })
+    })
+      .then(response => {console.log(response.json())})
+  }
+
   render() {
     return (
       <>
@@ -53,6 +67,7 @@ export default class App extends Component {
                 <Route path='/new/' render={props => {
                     return <NewProtest 
                                 addNewProtest={this.addNewProtest}
+                                addNewUser={this.addNewUser}
                             />
                 }} />
                 <Route path='/protests/' render={props => {

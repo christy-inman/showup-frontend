@@ -22,6 +22,7 @@ export default function NewProtest(props) {
     return(
         <>
             <h2>New Protest</h2>
+            <button onClick={props.addNewUser}>Sign Up</button>
             <form className='new-protest-form' onSubmit={handleSubmitNewProtest}>
                 <label>Name of Protest</label>
                 <input required 
