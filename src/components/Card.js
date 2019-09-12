@@ -10,7 +10,6 @@ export default function Card(props) {
         const year = d2.shift()
         d2.push(year)
         date = d2.join('/')
-        console.log(d2, year, date)
         return date
     }
     return(
@@ -21,7 +20,7 @@ export default function Card(props) {
                 <p>{protest.time}</p>
                 <p>{protest.location}</p>
             </div>
-            <img src={protest.image} alt='Protest Photo' />
+            <img src={protest.image} alt='Protest' />
             <p className='protest-description'>{protest.description}</p>
             {/* <p>{protest.donate}</p> */}
         </div>

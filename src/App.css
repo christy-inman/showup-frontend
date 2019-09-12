@@ -56,7 +56,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 42%;
 }
 .protest-card {
     display: flex;
@@ -64,7 +64,7 @@ img {
     flex-wrap: wrap;
     border: 1px rgb(92, 92, 92) solid;
     width: 80%;
-    padding: 2%;
+    padding: 3% 2% 2% 2%;
     background-color: white;
     margin-bottom: 5%;
 }
@@ -105,15 +105,16 @@ h1 {
 }
 body {
     background: url('https://images.unsplash.com/photo-1485223377494-a570d9cd68a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80')
-                   no-repeat right center fixed ;
+                   no-repeat right center fixed;
     margin-bottom: 10%;
 }
 .p {
     margin: 2% 12%;
 }
 .protest-description {
+    text-align: justify;
     margin: 2% 7%;
 }
-aside {
-    margin-left: 3%;
+.indent {
+    margin-left: 3.3%;
 }

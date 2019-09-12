@@ -3,7 +3,7 @@ import React from 'react';
 export default function About() {
     return(
         <main className='main-content'>
-            <h2>About</h2>
+            <h2>About Our Mission</h2>
             <div className='form'>
                 <p className='p'>
                     This site exists to create a platform for anyone to create a protest event
@@ -22,8 +22,8 @@ export default function About() {
                 <p className='p'>
                     What is NOT allowed:<br/><br/>
                     - Hate speech and descriminatory rhetoric.<br/> 
-                        <aside>Any posted event found to promote such things will be immediately 
-                        deleted, and the host will be issued a conduct warning.</aside>
+                        <div className='indent'>Any posted event found to promote such things will be immediately 
+                        deleted, and the host will be issued a conduct warning.</div>
                     - Users who recieve more than 3 conduct warnings will be removed from the site.
                 </p>
             </div>
