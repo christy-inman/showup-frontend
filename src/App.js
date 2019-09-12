@@ -78,7 +78,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <>
+      <body className='body'>
         <Router>
           <Header />
             <main id='main'>
@@ -113,6 +113,6 @@ export default class App extends Component {
             </main>
           {/* <Footer /> */}
         </Router>
-      </>
+      </body>
   )}
 }

@@ -25,9 +25,9 @@ export default function Login(props) {
             <label className='label'>Password</label>
             <input required type='password' className='text-input' />
             <input type='submit' value='Log In' className='text-input' id='button' />
+            <button className='text-input' id='button' onClick={handleLogoutClick}>Log Out</button>
+            <Link className='text-input' id='button' to='/signup/'>Sign Up for an Account</Link>
         </form>
-        <button className='text-input' id='button' onClick={handleLogoutClick}>Log Out</button>
-        <Link className='text-input' id='button' to='/signup/'>Sign Up for an Account</Link>
         </main>
     )
 }
