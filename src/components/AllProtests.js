@@ -9,11 +9,12 @@ export default function AllProtests(props) {
                 />
     })
     return(
-        <>
+        <main className='main-content'>
             <h2>Upcoming Protests</h2>
             <div className='protests-container'>
                 {protests}
             </div>
-        </>
+            <div className='push'></div>
+        </main>
     )
 }

@@ -17,17 +17,17 @@ export default function Login(props) {
     }
 
     return(
-        <>
-        <h2>Login</h2>
-        <form onSubmit={handleSubmitLoginForm}>
-            <label>Email</label>
-            <input required type='email' />
-            <label>Password</label>
-            <input required type='password' />
-            <input type='submit' value='Log In' />
+        <main className='main-content'>
+        <h2>Log In</h2>
+        <form className='form' onSubmit={handleSubmitLoginForm}>
+            <label className='label'>Email</label>
+            <input required type='email' className='text-input' />
+            <label className='label'>Password</label>
+            <input required type='password' className='text-input' />
+            <input type='submit' value='Log In' className='text-input' id='button' />
         </form>
-        <button onClick={handleLogoutClick}>Log Out</button>
-        <Link to='/signup/'>Sign Up for an Account</Link>
-        </>
+        <button className='text-input' id='button' onClick={handleLogoutClick}>Log Out</button>
+        <Link className='text-input' id='button' to='/signup/'>Sign Up for an Account</Link>
+        </main>
     )
 }

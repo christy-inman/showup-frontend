@@ -20,59 +20,77 @@ export default function NewProtest(props) {
     }
 
     return(
-        <>
+        <main className='main-content'>
             <h2>New Protest</h2>
-            <button onClick={props.addNewUser}>Sign Up</button>
-            <form className='new-protest-form' onSubmit={handleSubmitNewProtest}>
-                <label>Name of Protest</label>
+            <form 
+                id='new-protest-form' 
+                className='form' 
+                onSubmit={handleSubmitNewProtest}
+            >
+                <label className='label'>Name of Protest</label>
                 <input required 
                     type='text' 
                     placeholder='' 
+                    className='text-input'
                 />
-                <label>Image for Protest</label>
+                <label className='label'>Image for Protest</label>
                 <input required 
                     type='text' 
                     placeholder='Must be a URL to image'
+                    className='text-input'
                 />
-                <label>Date</label>
-                <input required type='date' />
-                <label>Time of Protest</label>
+                <label className='label'>Date</label>
+                <input required type='date' className='text-input' />
+                <label className='label'>Time of Protest</label>
                 <input required 
                     type='text' 
                     placeholder=''
+                    className='text-input'
                 />
-                <label>Street Address</label>
+                <label className='label'>Street Address</label>
                 <input 
                     type='text' 
                     placeholder=''
+                    className='text-input'
                 />
-                <label>City</label>
+                <label className='label'>City</label>
                 <input required 
                     type='text' 
                     placeholder=''
+                    className='text-input'
                 />
-                <label>State</label>
+                <label className='label'>State</label>
                 <input required 
                     type='text' 
                     placeholder=''
+                    className='text-input'
                 />
-                <label>Zip Code</label>
+                <label className='label'>Zip Code</label>
                 <input required 
                     type='text' 
                     placeholder=''
+                    className='text-input'
                 />
-                <label>Description of Protest</label>
+                <label className='label'>Description of Protest</label>
                 <textarea required 
                     type='text' 
                     placeholder=''
+                    rows='12'
+                    className='text-input'
                 />
-                <label>Donation Link</label>
+                <label className='label'>Donation Link</label>
                 <input required 
                     type='text' 
                     placeholder='URL to donate to cause'
+                    className='text-input'
                 />
-                <input type='submit' value='Create Protest' />
+                <input 
+                    type='submit' 
+                    value='Create Protest' 
+                    className='text-input' 
+                    id='button' 
+                />
             </form>
-        </>
+        </main>
     )
 }

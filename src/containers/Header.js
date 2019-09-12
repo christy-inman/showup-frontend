@@ -5,8 +5,8 @@ import '../App.css'
 export default function Header() {
     return(
         <header id='header'>
+            <h1>SHOW UP and SPEAK OUT</h1>
             <NavMenu />
-            <h1>Header</h1>
         </header>
     )
 }

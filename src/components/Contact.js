@@ -21,21 +21,22 @@ export default function Contact() {
         form.reset()
     }
     return(
-        <>
+        <main className='main-content'>
             <h2>Contact Us</h2>
-            <p>
-                Information about how to contact with questions 
-                or for tech support.
-            </p>
-            <form id='contact-form' onSubmit={handleSubmitContactForm}>
+            <form id='contact-form' className='form' onSubmit={handleSubmitContactForm}>
                 <label className='label'>Name</label>
-                <input type='text' />
+                <input type='text' className='text-input' />
                 <label className='label'>Email address</label>
-                <input type='email' />
+                <input type='email' className='text-input' />
                 <label className='label'>Message</label>
-                <textarea rows='4'></textarea>
-                <input type='submit' value='Send Message'/>
+                <textarea rows='12' className='text-input' />
+                <input 
+                    type='submit' 
+                    value='Send Message' 
+                    className='text-input' 
+                    id='button' 
+                />
             </form>
-        </>
+        </main>
     )
 }

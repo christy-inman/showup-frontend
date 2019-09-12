@@ -18,17 +18,17 @@ export default function Signup(props) {
     }
 
     return(
-        <>
+        <main className='main-content'>
             <h2>Create Account</h2>
-            <form onSubmit={handleSubmitSignupForm}>
-                <label>Name</label>
-                <input required type='text' />
-                <label>Email</label>
-                <input required type='email' />
-                <label>Password</label>
-                <input required type='password' />
-                <input type='submit' value='Create Account' />
+            <form className='form' onSubmit={handleSubmitSignupForm}>
+                <label className='label'>Name</label>
+                <input required type='text' className='text-input' />
+                <label className='label'>Email</label>
+                <input required type='email' className='text-input' />
+                <label className='label'>Password</label>
+                <input required type='password' className='text-input' />
+                <input type='submit' value='Create Account' className='text-input' id='button' />
             </form>
-        </>
+        </main>
     )
 }

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Header from './containers/Header';
-import Footer from './containers/Footer';
+// import Footer from './containers/Footer';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import AllProtests from './components/AllProtests';
 import Contact from './components/Contact';
@@ -111,7 +111,7 @@ export default class App extends Component {
 
               </Switch>
             </main>
-          <Footer />
+          {/* <Footer /> */}
         </Router>
       </>
   )}
