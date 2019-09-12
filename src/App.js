@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
 import Header from './containers/Header';
 import Footer from './containers/Footer';
-import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import AllProtests from './components/AllProtests';
 import Contact from './components/Contact';
 import About from './components/About';
 import Home from './components/Home';
 import NewProtest from './components/NewProtest';
+import Login from './components/Login'
+import Signup from './components/Signup'
 import './App.css';
 
 const protestsURL = 'http://localhost:3000'
@@ -42,18 +44,36 @@ export default class App extends Component {
           .catch(error => console.log(error))
   }
 
-  addNewUser = () => {
+  addNewUser = (user) => {
+    console.log(user)
     fetch((protestsURL + '/signup'), {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({
-        name: 'Smaple User',
-        email: 'sample@email.com',
-        password: 'samplepassword',
-        token: ''
-      })
+      body: JSON.stringify(user)
     })
       .then(response => {console.log(response.json())})
+  }
+
+  login = (user) => {
+    fetch((protestsURL + '/login'), {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(user)
+    })
+      .then(response => response.json())
+      .then(res => console.log(res))
+      .catch(error => console.log(error))
+  }
+
+  logout = (user) => {
+    fetch((protestsURL + '/logout'), {
+      method: 'PUT',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(user)
+    })
+      .then(response => response.json())
+      .then(res => console.log(res))
+      .catch(error => console.log(error))
   }
 
   render() {
@@ -77,6 +97,18 @@ export default class App extends Component {
                 }} />
                 <Route path='/about/' component={About} />
                 <Route path='/contact/' component={Contact} />
+                <Route path='/login/' render={props => {
+                    return <Login 
+                              login={this.login}
+                              logout={this.logout}
+                            />
+                }} />
+                <Route path='/signup/' render={props => {
+                    return <Signup
+                              signup={this.addNewUser}
+                            />
+                }} />
+
               </Switch>
             </main>
           <Footer />

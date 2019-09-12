@@ -1,14 +1,16 @@
 import React from 'react';
+import {BrowserRouter as Router, Link} from 'react-router-dom'
 
 export default function Home() {
+
     return(
         <>
             <h2>Home</h2>
-            <p>
-                Background picture randomly selected from array of famous 
-                protest photos. With a search form to filter through protests
-                based on input value onSubmit.
-            </p>
+            <form>
+                <label>Where do you want to get involved?</label>
+                <input type='text' placeholder='Search by City, State, or Zip Code' />
+                <button><Link to='/protests/'>Search</Link></button>
+            </form>
         </>
     )
 }
