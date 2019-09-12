@@ -22,8 +22,8 @@ export default function About() {
                 <p className='p'>
                     What is NOT allowed:<br/><br/>
                     - Hate speech and descriminatory rhetoric.<br/> 
-                        <div className='indent'>Any posted event found to promote such things will be immediately 
-                        deleted, and the host will be issued a conduct warning.</div>
+                        <p className='indent'>Any posted event found to promote such things will be immediately 
+                        deleted, and the host will be issued a conduct warning.</p>
                     - Users who recieve more than 3 conduct warnings will be removed from the site.
                 </p>
             </div>
