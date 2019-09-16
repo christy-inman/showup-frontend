@@ -11,7 +11,7 @@ import Login from './components/Login'
 import Signup from './components/Signup'
 import './App.css';
 
-const protestsURL = 'http://localhost:3000'
+const protestsURL = ' https://showup-api.herokuapp.com'
 
 
 export default class App extends Component {
