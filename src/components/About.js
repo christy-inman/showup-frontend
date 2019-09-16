@@ -8,7 +8,7 @@ export default function About() {
                 <p className='p'>
                     This site exists to create a platform for anyone to create a protest event
                     in order to share the event, and to spread word about the cause. We believe
-                    in promoting resectful debate about topics as a means to encourage personal
+                    in promoting respectful debate about topics as a means to encourage personal
                     growth, and societal change. This site does not exist to support any political
                     party or societal agenda, we only serve as a free platform to create and 
                     encourage peaceful assembly.<br/><br/> Share your beliefs, love your fellows.
@@ -21,7 +21,7 @@ export default function About() {
                 </p>
                 <p className='p'>
                     What is NOT allowed:<br/><br/>
-                    - Hate speech and descriminatory rhetoric.<br/> 
+                    - Hate speech and discriminatory rhetoric.<br/> 
                         <p className='indent'>Any posted event found to promote such things will be immediately 
                         deleted, and the host will be issued a conduct warning.</p>
                     - Users who recieve more than 3 conduct warnings will be removed from the site.
